@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
                      <img src="${p.photo}" class="card-img-top" alt="${p.name}">
                      <div class="card-body text-center">
                           <h5 class="card-title mb-1">${p.name}</h5>
-                          <p class="card-text">Age: ${p.age}</p>
-                            <p class="card-text">Country: ${p.country}</p>
+                          <p class="card-text"> ${p.age}</p>
+                            <p class="card-text"> ${p.country}</p>
                             <p class="badge badge-position bg-dark badge-pos-$(p.position}"> ${p.position}</p>
                             ${p.button}
                         </div>
@@ -29,6 +29,18 @@ document.addEventListener("DOMContentLoaded", () => {
 const splash = document.getElementById('splash');
 const content = document.getElementById('main-content');
 const progressBar = document.getElementById('progress-bar');
+const audio = document.getElementById('startup-sound');
+
+
+
+// Play sound on load
+window.addEventListener('load', () => {
+  audio.play().catch(err => {
+    console.log("Autoplay blocked, will try on interaction:", err);
+    // Optional fallback: play on first user interaction
+    document.body.addEventListener('click', () => audio.play(), { once: true });
+  });
+});
 
 let progress = 0;
 const intervalTime = 50; // ms

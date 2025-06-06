@@ -1,54 +1,44 @@
 const players = [
   {
-    name: "Cristiano Ronaldo",
-    age: 38,
-    country: "Portugal",
-    position: "Forward",
+    name: "Wooden Airplane",
+    age: "$5.00",
+    country: "3.5 inches height ; 7 inches length ; 7 inches width",
+    position: "5+ years",
     photo: "download.jpg",
     button: '<button onclick="showProfile(\'Cristiano Ronaldo\')" class="btn btn-primary">View Profile</button>'
   },
   {
-    name: "Lionel Messi",
-    age: 36,
-    country: "Argentina",
-    position: "Forward",
+    name: "Wooden Train Set",
+    age: "$6.99",
+    country: "84cm large ; 11cm height ; 13cm width",
+    position: "3+ years",
     photo: "images.jpg",
     button: '<button onclick="showProfile(\'Lionel Messi\')" class="btn btn-primary">View Profile</button>'
   },
   {
-    name: "Neymar",
-    age: 31,
-    country: "Brazil",
-    position: "Forward",
+    name: "Wooden Boat",
+    age: "$7.49",
+    country: "10.5 width ; 3.5 height",
+    position: "All ages",
     photo: "ney.jpg",
     button: '<button onclick="showProfile(\'Neymar\')" class="btn btn-primary">View Profile</button>'
   },
   {
-    name: "Kylian Mbappé",
-    age: 24,
-    country: "France",
-    position: "Forward",
+    name: "Wooden Block Set",
+    age: "$5.30",
+    country: "13 large ; 12 width; 2 height",
+    position: "3+ years",
     photo: "i.jpg",
     button: '<button onclick="showProfile(\'Kylian Mbappé\')" class="btn btn-primary">View Profile</button>'
   },
   {
-    name: "Robert Lewandowski",
-    age: 35,
-    country: "Poland",
-    position: "Forward",
-    photo: "lew.jpg",
-    button: '<button onclick="showProfile(\'Robert Lewandowski\')" class="btn btn-primary">View Profile</button>'
-  },
-  {
-    name: "Robert Lewandowski",
-    age: 35,
-    country: "Poland",
-    position: "Forward",
-    photo: "lew.jpg",
+    name: "Wooden Car",
+    age: "$6.79",
+    country: "16 width ; 7 height",
+    position: "6+ years",
+    photo: "",
     button: '<button onclick="showProfile(\'Robert Lewandowski\')" class="btn btn-primary">View Profile</button>'
   }
-  
-  
 ];
 
 function showProfile(name) {
@@ -70,19 +60,3 @@ function showProfile(name) {
 }
 
 // Optional: Basic bios
-function getBio(name) {
-  const bios = {
-    "Cristiano Ronaldo": "Cristiano Ronaldo is a Portuguese footballer known for his goal-scoring, leadership, and numerous accolades.",
-    "Lionel Messi": "Lionel Messi is an Argentine football legend with 7 Ballon d'Or titles and known for his dribbling and vision.",
-    "Neymar": "Neymar is a Brazilian forward famous for his flair, creativity, and performances for club and country.",
-    "Kylian Mbappé": "Mbappé is a young French star, World Cup winner, and key player for PSG.",
-    "Robert Lewandowski": "Lewandowski is a Polish striker known for his consistency and finishing.",
-    "Mohamed Salah": "Salah is an Egyptian forward known for his pace and success at Liverpool.",
-    "Harry Kane": "Kane is an English striker recognized for his goal-scoring and playmaking.",
-    "Kevin De Bruyne": "De Bruyne is a Belgian midfielder known for his passing and intelligence.",
-    "Luka Modrić": "Modrić is a Croatian playmaker and Ballon d'Or winner known for his control and vision.",
-    "Casemiro": "Casemiro is a Brazilian defensive midfielder renowned for his tactical strength.",
-    " Kanté": "Kanté is a French midfielder with unmatched work rate and defensive skills."
-  };
-  return bios[name] || "This player's biography is unavailable.";
-}

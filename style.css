@@ -91,3 +91,13 @@ img:hover {
   width: 0%;
   transition: width 0.1s linear;
 }
+
+.contact-container {
+  max-width: 500px;
+  margin: auto;
+  background: rgba(255, 166, 0, 0.63);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding-top: 80px;
+}
